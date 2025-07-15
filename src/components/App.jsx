@@ -3,16 +3,14 @@ import blogData from "../data/blog";
 import Header from "./Header"
 import About from "./About"
 import ArticleList from "./ArticleList"
-import logo from "../assets/logo.png"
-
-console.log(blogData);
+import logo from "../assets/logo.js"
 
 function App() {
   return (
     <div className="App">
       <Header name="Duck Blog" />
       <About imageURL={logo} altName="blog logo" />
-      <ArticleList />
+      <ArticleList posts={blogData.posts} />
     </div>
   );
 }
