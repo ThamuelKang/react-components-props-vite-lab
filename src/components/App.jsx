@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <Header name="Duck Blog" />
-      <About imageURL={logo} altName="blog logo" />
+      <About imageURL={logo}/>
       <ArticleList posts={blogData.posts} />
     </div>
   );

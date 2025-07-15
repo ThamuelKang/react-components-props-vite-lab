@@ -1,8 +1,8 @@
-function About({imageURL, altName}) {
+function About({imageURL ="https://via.placeholder.com/215"}) {
     return (
         <aside>
-            <img src={imageURL} alt={altName} />
-            <p>A blog about round, beautiful, and sexi ducks</p>
+            <img src={imageURL} alt="blog logo" />
+            <p>About this blog</p>
         </aside>
     )
 }
